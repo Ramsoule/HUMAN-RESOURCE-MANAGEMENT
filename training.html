@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training — HR Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-logo">HR</div>
+    <div class="header-text">
+      <h1>Corporate HR Portal</h1>
+      <p>Human Resource Management</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html">Home</a>
+    <a href="careers.html">Careers</a>
+    <a href="training.html" class="active">Training</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page-content">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span> Training
+  </div>
+
+  <div class="section-header">
+    <div class="label">Learn &amp; Grow</div>
+    <h2>Training &amp; Development</h2>
+    <p>Invest in yourself. Our programmes are designed to sharpen skills, build leaders, and create lasting professional value.</p>
+  </div>
+
+  <!-- VIDEO 1: Local file first, YouTube fallback -->
+  <div class="panel">
+    <div class="training-grid">
+      <div>
+        <div class="section-header">
+          <div class="label">Featured Programme</div>
+          <h2 style="font-size:1.5rem;">Training Introduction</h2>
+          <p>Watch this before enrolling in any programme. If you have a local video file, place it at <code>video/training-intro.mp4</code> next to this HTML file.</p>
+        </div>
+
+        <!-- LOCAL VIDEO — works if training-intro.mp4 is in a /video/ folder beside this file -->
+        <div class="video-wrapper" id="local-video-box">
+          <div class="video-label">&#9654; &nbsp;Training Intro (Local File)</div>
+          <video controls width="100%" id="local-vid"
+                 style="background:#000;"
+                 onerror="document.getElementById('local-video-box').style.display='none';
+                          document.getElementById('yt-video-box').style.display='block';">
+            <source src="video/training-intro.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- YOUTUBE FALLBACK — shown automatically if local file missing -->
+        <div class="video-wrapper" id="yt-video-box" style="display:none;">
+          <div class="video-label">&#9654; &nbsp;Leadership &amp; Skills Training (Online)</div>
+          <iframe src="https://embed.ted.com/talks/dan_pink_the_puzzle_of_motivation" width="100%" height="260" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:10px;">
+          &#9432; To use your own video: create a <strong>video/</strong> folder next to this file and place <strong>training-intro.mp4</strong> inside it.
+        </p>
+      </div>
+
+      <div>
+        <div class="section-header">
+          <div class="label">Our Programmes</div>
+          <h2 style="font-size:1.5rem;">What We Offer</h2>
+        </div>
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="program-num">01</div>
+            <div>
+              <h4>Skills Development</h4>
+              <p>Hands-on workshops covering technical and soft skills needed for today's workplace.</p>
+            </div>
+          </li>
+          <li class="program-item">
+            <div class="program-num">02</div>
+            <div>
+              <h4>Leadership Training</h4>
+              <p>Equip managers and future leaders with strategic thinking and people management skills.</p>
+            </div>
+          </li>
+          <li class="program-item">
+            <div class="program-num">03</div>
+            <div>
+              <h4>Onboarding Programme</h4>
+              <p>A structured journey for new employees to integrate smoothly into our culture and systems.</p>
+            </div>
+          </li>
+          <li class="program-item">
+            <div class="program-num">04</div>
+            <div>
+              <h4>Compliance &amp; Ethics</h4>
+              <p>Mandatory annual training to ensure awareness of company policies and regulatory requirements.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO 2: Wellbeing — YouTube -->
+  <div class="panel">
+    <div class="section-header">
+      <div class="label">Wellness at Work</div>
+      <h2>Employee Wellbeing Programme</h2>
+      <p>Watch our wellbeing overview to learn what support is available to you.</p>
+    </div>
+    <div class="video-wrapper">
+      <div class="video-label">&#9654; &nbsp;Workplace Wellbeing Overview</div>
+      <iframe src="https://embed.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance" width="100%" height="400" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-top:10px;">&#9432; Video requires an internet connection to play.</p>
+  </div>
+
+  <!-- TRAINING PHOTOS -->
+  <div class="panel">
+    <div class="section-header">
+      <div class="label">In Action</div>
+      <h2>Our Training Environment</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&q=80"
+           alt="Training session in progress"
+           style="width:100%; height:220px; object-fit:cover; border-radius:10px;">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=80"
+           alt="Collaborative team workshop"
+           style="width:100%; height:220px; object-fit:cover; border-radius:10px;">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-copy">© 2026 Corporate HR Portal. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="policies.html">Privacy Policy</a>
+      <a href="policies.html">Code of Conduct</a>
+      <a href="contact.html">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Show YouTube fallback if local video can't load after 1.5s
+window.addEventListener('load', function() {
+  var vid = document.getElementById('local-vid');
+  if (vid) {
+    setTimeout(function() {
+      if (vid.readyState === 0) {
+        document.getElementById('local-video-box').style.display = 'none';
+        document.getElementById('yt-video-box').style.display = 'block';
+      }
+    }, 1500);
+  }
+});
+</script>
+
+</body>
+</html>
